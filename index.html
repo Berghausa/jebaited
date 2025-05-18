@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Nitro Geschenk</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #2c2f33;
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .container {
+      background: #23272a;
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #7289da;
+      color: white;
+      cursor: pointer;
+    }
+    #warning {
+      display: none;
+      margin-top: 30px;
+      font-size: 18px;
+      color: #ff5555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Du wurdest für ein kostenloses Discord Nitro ausgewählt!</h1>
+    <p>Klicke auf den Button, um dein Geschenk zu erhalten:</p>
+    <button onclick="jebait()">Nitro einlösen</button>
+    <p id="warning"><strong>⚠️ Denk nach, bevor du auf Links klickst.</strong><br>Dies hätte auch ein Virus sein können.<br>Bleib wachsam – Internet 101.</p>
+  </div>
+
+  <script>
+    function jebait() {
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+      document.getElementById("warning").style.display = "block";
+    }
+  </script>
+</body>
+</html>
