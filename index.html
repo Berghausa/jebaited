@@ -45,10 +45,15 @@
 
   <script>
     function jebait() {
-      // Jebaited öffnen
-      window.open("https://www.youtube.com/watch?v=d1YBv2mWll0", "_blank");
-      // Rickroll öffnen
-      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+      // Neuer Tab wird geöffnet, aber ohne Fokus
+      const link = document.createElement("a");
+      link.href = "https://www.youtube.com/watch?v=d1YBv2mWll0";
+      link.target = "_blank";
+      link.rel = "noopener"; // verhindert Fokuswechsel
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
 
       // Warnung anzeigen
       document.getElementById("warning").style.display = "block";
